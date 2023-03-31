@@ -5,8 +5,6 @@ const userSchema = new Schema({
   sobrenome: { type: String, requiered: true },
   cargo: { type: String, required: true },
   idade: { type: Number, required: true },
-  nivel: { type: String, required: true },
-  ativo: { type: Boolean, requiered: true },
   passwordHash: { type: String, required: true },
   role: { type: String, enum: ["ADMIN", "USER"], default: "USER" },
 });
